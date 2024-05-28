@@ -13,7 +13,7 @@ function getRandomHexColor() {
   stopData.setAttribute("disabled", true);
 
   startData.addEventListener("click", () => {
-    startData.removeAttribute("disabled");
+    stopData.removeAttribute("disabled");
     timer = setInterval(() => {
       body.style.backgroundColor = getRandomHexColor();
     }, 1000);
