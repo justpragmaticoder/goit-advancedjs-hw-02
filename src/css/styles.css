@@ -79,7 +79,7 @@ body {
 
 .timer {
   display: flex;
-  gap: 15;
+  gap: 15px;
   margin-top: 20px;
 }
 

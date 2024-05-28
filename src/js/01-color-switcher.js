@@ -10,7 +10,7 @@ function getRandomHexColor() {
   const body = document.querySelector("body");
 
   let timer = null;
-  dataStop.setAttribute("disabled", true);
+  stopData.setAttribute("disabled", true);
 
   startData.addEventListener("click", () => {
     startData.removeAttribute("disabled");

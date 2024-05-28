@@ -21,7 +21,6 @@ function handleSubmit(event, delayElem, stepElem, amountElem) {
       });
     delay += step;
   }
-  form.reset();
 }
 
 function createPromise(position, delay) {
@@ -44,7 +43,8 @@ function createPromise(position, delay) {
   const stepElem = document.querySelector('input[name="step"]');
   const amountElem = document.querySelector('input[name="amount"]');
 
-  form.addEventListener("submit", (event) =>
-    handleSubmit(event, delayElem, stepElem, amountElem)
-  );
+  form.addEventListener("submit", (event) => {
+    handleSubmit(event, delayElem, stepElem, amountElem);
+    form.reset();
+  });
 })();
